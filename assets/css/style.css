@@ -5,6 +5,14 @@ html, body {
   font-weight: bold;
 }
 
+.alert-on{
+  visibility: visible;
+}
+
+.alert-off{
+  visibility: hidden;
+}
+
 .hireMe{
   margin-left: 20px;
   margin-right: -50px;
@@ -46,7 +54,7 @@ section {
 
 .mid-sec-3 {
   height: 50vh;
-  background-image: url(../image/bg3.jpg);
+  background-image: url(../image/header.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -54,7 +62,7 @@ section {
 }
 
 .top {
-  background-image: url(../image/header.jpg);
+  background-image: url(../image/bg3.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

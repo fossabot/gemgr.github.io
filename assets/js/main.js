@@ -7,6 +7,12 @@ $('body').scrollspy({
   target: '#singlePageNav'
 });
 
+$(document).ready(function() {
+  setInterval(function() {
+    $('.alert').fadeIn(100).fadeOut(200).fadeIn(100).fadeOut(200).fadeIn(100);
+  },3000)
+});
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -37,7 +43,9 @@ $('form').change(function() {
 
 $(window).scroll(function() {
   if ($(this).scrollTop() <= $('.top').height()) {
-    if ($(this).scrollTop() <= 30) {
+    if ($(this).scrollTop() <= 40) {
+      $('.navbar').css('background-color', 'transparent').fadeIn();
+    } else if($(this).scrollTop() == $('.top').height()) {
       $('.navbar').css('background-color', 'transparent').fadeIn();
     } else {
       $('.navbar').css('background-color', 'transparent').fadeOut();
