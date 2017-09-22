@@ -8,9 +8,15 @@ $('body').scrollspy({
 });
 
 $(document).ready(function() {
+  // Work in Progress Alert
   setInterval(function() {
-    $('.alert').fadeIn(100).fadeOut(200).fadeIn(100).fadeOut(200).fadeIn(100);
-  },3000)
+    $('.wip-alert').fadeIn(100).fadeOut(200).fadeIn(100).fadeOut(200).fadeIn(100);
+  },4000);
+
+  // Hire me btn flashing
+  setInterval(function() {
+    $('.hireMe').fadeOut('fast').fadeIn('fast');
+  },3600);
 });
 
 $(function () {
@@ -25,21 +31,6 @@ $('[data-spy="scroll"]').each(function() {
 // $(".alert").fadeTo(2000, 500).fadeOut(500, function(){
 //  $(".alert").fadeOut(500);
 // });
-
-$('form').change(function() {
-  var submitBtn = $('.sendMail');
-  var toAddr = $('#toEmail').val();
-  var fromAddr = $('#inputEmail').val();
-  var subject = $('#inputSubject').val();
-  var body = $('#inputBody').val();
-
-  if (fromAddr != "" && subject != "" && body != ""){
-    $('.sendMail').removeClass('disabled');
-    $('a.sendMail').attr('href', 'mailto:'+toAddr+'?subject='+subject+'&body='+body);
-  } else {
-    $('.sendMail').addClass('disabled');
-  }
-});
 
 $(window).scroll(function() {
   if ($(this).scrollTop() <= $('.top').height()) {

@@ -5,17 +5,31 @@ html, body {
   font-weight: bold;
 }
 
-.alert-on{
-  visibility: visible;
+.icon-shadow{
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.alert-off{
-  visibility: hidden;
+a.nav-link .icon-shadow:hover{
+  color: #EFDC05;
+}
+
+.btn-shadow{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .hireMe{
   margin-left: 20px;
   margin-right: -50px;
+  color: snow;
+  border: 1px solid #cbe86b;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.hireMe:hover{
+  background-color: #cbe86b;
+  border: 1px solid #cbe86b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .form-control-plaintext{
